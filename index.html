@@ -1,113 +1,184 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="hi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090909">
-  <meta name="description" content="Wealth With Sarode — financial awareness and life insurance guidance.">
-  <title>Wealth With Sarode | Secure Today. Build Tomorrow.</title>
-  <link rel="icon" type="image/png" href="icon-192.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wealth With Sarode - LIC financial planning and personalised financial guidance. Book a consultation and submit an enquiry online." />
+  <title>Wealth With Sarode | LIC Financial Advisor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Wealth With Sarode home">
-      <img src="assets/logo.png" alt="Wealth With Sarode logo">
-      <span>WEALTH <b>WITH SARODE</b></span>
-    </a>
-    <nav>
-      <a href="#about" data-en="About" data-hi="हमारे बारे में">About</a>
-      <a href="#learn" data-en="Learn" data-hi="जानकारी">Learn</a>
-      <a href="#enquiry" data-en="LIC Enquiry" data-hi="LIC पूछताछ">LIC Enquiry</a>
-    </nav>
-    <button class="language" id="languageToggle" type="button" aria-label="Switch language">हिन्दी</button>
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Wealth With Sarode home">
+        <img src="assets/wealth-with-sarode.png" alt="Wealth With Sarode logo" />
+      </a>
+      <div class="language-switch" aria-label="Choose language"><button type="button" data-lang="mr">मराठी</button><button type="button" data-lang="hi" class="active">हिन्दी</button><button type="button" data-lang="en">English</button></div>
+      <nav>
+        <a href="#plans" data-i18n="navPlans">Plans</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#process" data-i18n="navProcess">How It Works</a>
+        <a class="nav-cta" href="#enquiry" data-i18n="consult">Free Consultation</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow" data-en="FINANCIAL AWARENESS • LIFE INSURANCE" data-hi="वित्तीय जागरूकता • जीवन बीमा">FINANCIAL AWARENESS • LIFE INSURANCE</p>
-        <h1 data-en="Protect what matters. Plan for what’s next." data-hi="जो अनमोल है उसकी सुरक्षा करें। आने वाले कल की योजना बनाएं।">Protect what matters. Plan for what’s next.</h1>
-        <p class="lead" data-en="Understand life insurance and make informed financial decisions for the people who matter most." data-hi="जीवन बीमा को समझें और अपने प्रियजनों के लिए सोच-समझकर वित्तीय निर्णय लें।">Understand life insurance and make informed financial decisions for the people who matter most.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#enquiry" data-en="Enquire about LIC plans" data-hi="LIC प्लान के बारे में पूछें">Enquire about LIC plans</a>
-          <a class="button secondary" href="#learn" data-en="Explore & learn" data-hi="जानें और समझें">Explore & learn</a>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span> <span data-i18n="eyebrow">LIC Financial Planning & Advisory</span></div>
+          <h1 data-i18n="heroTitle">आपके आज के फैसले,<br><span>कल की सुरक्षा।</span></h1>
+          <p class="hero-text" data-i18n="heroText">सही insurance, savings, retirement और wealth-planning solutions को समझिए — आपकी जरूरत और goals के अनुसार.</p>
+          <div class="hero-actions">
+            <a href="#enquiry" class="btn btn-gold" data-i18n="consult">Free Consultation <span>→</span></a>
+            <a id="callBtn" href="#" class="btn btn-outline" data-i18n="callNow">Call Now</a>
+          </div>
+          <div class="trust-row">
+            <div class="trust-item"><strong>LIC</strong><small>Financial Advisor</small></div>
+            <div class="divider"></div>
+            <div class="trust-item"><strong>Personalised</strong><small>Planning Approach</small></div>
+            <div class="divider"></div>
+            <div class="trust-item"><strong>One-to-One</strong><small>Consultation</small></div>
+          </div>
         </div>
-        <p class="micro" data-en="Clear information. Thoughtful conversations. No pressure." data-hi="स्पष्ट जानकारी। समझदारी से बातचीत। कोई दबाव नहीं।">Clear information. Thoughtful conversations. No pressure.</p>
-      </div>
-      <div class="hero-card">
-        <div class="gold-ring">W</div>
-        <p class="quote" data-en="Your family’s financial future deserves a thoughtful plan." data-hi="आपके परिवार का वित्तीय भविष्य एक सोच-समझकर बनाई गई योजना का हकदार है।">Your family’s financial future deserves a thoughtful plan.</p>
-        <span>WEALTH WITH SARODE</span>
+
+        <div class="advisor-stage">
+          <div class="stage-card">
+            <div class="stage-top">
+              <div class="lic-badge" aria-label="LIC">
+                <div class="lic-mark">LIC</div>
+                <div class="lic-caption">LIFE INSURANCE<br>CORPORATION OF INDIA</div>
+              </div>
+              <div class="verified">✓ Professional Advisor</div>
+            </div>
+            <div class="advisor-photo-wrap">
+              <div class="gold-ring"></div>
+              <img src="assets/advisor.jpg" alt="Wealth With Sarode financial advisor" class="advisor-photo" />
+              <div class="advisor-label">
+                <strong>Wealth With Sarode</strong>
+                <span>LIC Financial Advisor</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card fc-one"><span>₹</span><div><b>Plan Smart</b><small>For your financial goals</small></div></div>
+          <div class="floating-card fc-two"><span>✓</span><div><b>Personal Guidance</b><small>Simple • Transparent • Professional</small></div></div>
+        </div>
       </div>
     </section>
 
-    <section class="trust-strip">
-      <div><strong>01</strong><span data-en="Understand your needs" data-hi="अपनी ज़रूरतें समझें">Understand your needs</span></div>
-      <div><strong>02</strong><span data-en="Explore suitable options" data-hi="उपयुक्त विकल्प जानें">Explore suitable options</span></div>
-      <div><strong>03</strong><span data-en="Decide with clarity" data-hi="स्पष्टता के साथ निर्णय लें">Decide with clarity</span></div>
-    </section>
-
-    <section class="section" id="about">
-      <p class="eyebrow" data-en="ABOUT THE BRAND" data-hi="हमारे बारे में">ABOUT THE BRAND</p>
-      <h2 data-en="A more informed approach to protection and planning." data-hi="सुरक्षा और योजना के लिए अधिक जागरूक दृष्टिकोण।">A more informed approach to protection and planning.</h2>
-      <p class="section-intro" data-en="Wealth With Sarode aims to make insurance and financial concepts easier to understand. Explore educational information and request a conversation about your needs." data-hi="Wealth With Sarode का उद्देश्य बीमा और वित्तीय विषयों को समझना आसान बनाना है। जानकारी पढ़ें और अपनी ज़रूरतों पर बातचीत का अनुरोध करें।">Wealth With Sarode aims to make insurance and financial concepts easier to understand. Explore educational information and request a conversation about your needs.</p>
-      <div class="feature-grid">
-        <article class="feature"><span>◇</span><h3 data-en="Financial awareness" data-hi="वित्तीय जागरूकता">Financial awareness</h3><p data-en="Learn key concepts before making a financial decision." data-hi="वित्तीय निर्णय लेने से पहले महत्वपूर्ण बातें समझें।">Learn key concepts before making a financial decision.</p></article>
-        <article class="feature"><span>⌂</span><h3 data-en="Family protection" data-hi="परिवार की सुरक्षा">Family protection</h3><p data-en="Understand how life cover can form part of a family’s financial plan." data-hi="समझें कि जीवन बीमा परिवार की वित्तीय योजना का हिस्सा कैसे हो सकता है।">Understand how life cover can form part of a family’s financial plan.</p></article>
-        <article class="feature"><span>◎</span><h3 data-en="Informed choices" data-hi="जानकारीपूर्ण विकल्प">Informed choices</h3><p data-en="Compare features, benefits, conditions and suitability carefully." data-hi="विशेषताओं, लाभों, शर्तों और उपयुक्तता की सावधानी से तुलना करें।">Compare features, benefits, conditions and suitability carefully.</p></article>
+    <section class="ticker">
+      <div class="ticker-track">
+        <span>FAMILY PROTECTION</span><i>•</i><span>CHILDREN'S FUTURE</span><i>•</i><span>RETIREMENT PLANNING</span><i>•</i><span>WEALTH CREATION</span><i>•</i><span>SAVINGS</span><i>•</i>
+        <span>FAMILY PROTECTION</span><i>•</i><span>CHILDREN'S FUTURE</span><i>•</i><span>RETIREMENT PLANNING</span><i>•</i><span>WEALTH CREATION</span><i>•</i>
       </div>
     </section>
 
-    <section class="section dark-section" id="learn">
-      <p class="eyebrow" data-en="LEARN BEFORE YOU DECIDE" data-hi="निर्णय से पहले समझें">LEARN BEFORE YOU DECIDE</p>
-      <h2 data-en="Start with the right questions." data-hi="सही सवालों से शुरुआत करें।">Start with the right questions.</h2>
-      <div class="learn-grid">
-        <article><span>01 /</span><h3 data-en="Why life insurance?" data-hi="जीवन बीमा क्यों?">Why life insurance?</h3><p data-en="Explore the role of life cover in protecting dependants against financial uncertainty." data-hi="जानें कि जीवन बीमा आश्रित परिवार को वित्तीय अनिश्चितता से बचाने में कैसे मदद कर सकता है।">Explore the role of life cover in protecting dependants against financial uncertainty.</p></article>
-        <article><span>02 /</span><h3 data-en="What should I compare?" data-hi="किन बातों की तुलना करें?">What should I compare?</h3><p data-en="Review premiums, benefits, exclusions, policy term, conditions and your ability to pay." data-hi="प्रीमियम, लाभ, अपवाद, पॉलिसी अवधि, शर्तें और भुगतान क्षमता देखें।">Review premiums, benefits, exclusions, policy term, conditions and your ability to pay.</p></article>
-        <article><span>03 /</span><h3 data-en="How do I get guidance?" data-hi="मार्गदर्शन कैसे पाएं?">How do I get guidance?</h3><p data-en="Share a few basic details and request a discussion. Do not submit sensitive identity or banking information here." data-hi="कुछ सामान्य जानकारी देकर बातचीत का अनुरोध करें। यहां संवेदनशील पहचान या बैंकिंग जानकारी न दें।">Share a few basic details and request a discussion. Do not submit sensitive identity or banking information here.</p></article>
+    <section id="plans" class="section plans-section">
+      <div class="container">
+        <div class="section-heading center">
+          <div class="eyebrow" data-i18n="ourFocus">OUR FOCUS</div>
+          <h2 data-i18n="plansTitle">आपके लक्ष्य के लिए <span>सही योजना</span></h2>
+          <p data-i18n="plansText">अपने financial goal के बारे में बात कीजिए। हम available solutions को आपकी जरूरत के अनुसार समझने में मदद करेंगे.</p>
+        </div>
+
+        <div class="plan-slider" id="planSlider">
+          <button class="slider-btn prev" aria-label="Previous plan">‹</button>
+          <div class="plan-track">
+            <article class="plan-card active"><div class="plan-icon">⌂</div><h3>Family Protection</h3><p>परिवार की financial security और protection needs पर personalised guidance.</p><a href="#enquiry">Discuss this plan →</a></article>
+            <article class="plan-card"><div class="plan-icon">◎</div><h3>Child Future</h3><p>बच्चों की education और future goals के लिए long-term planning options समझें.</p><a href="#enquiry">Discuss this plan →</a></article>
+            <article class="plan-card"><div class="plan-icon">◴</div><h3>Retirement</h3><p>Retirement के बाद income और financial independence के लिए planning discussion.</p><a href="#enquiry">Discuss this plan →</a></article>
+            <article class="plan-card"><div class="plan-icon">↗</div><h3>Wealth Creation</h3><p>आपके time horizon और objectives के अनुसार wealth-planning solutions पर बात करें.</p><a href="#enquiry">Discuss this plan →</a></article>
+            <article class="plan-card featured"><div class="featured-tag">POPULAR</div><div class="plan-icon">₹</div><h3>Special Income Plan</h3><p>एक specific income-oriented opportunity के बारे में पूरी जानकारी और eligibility जानें.</p><a href="#enquiry">Get Details →</a></article>
+          </div>
+          <button class="slider-btn next" aria-label="Next plan">›</button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
       </div>
     </section>
 
-    <section class="section enquiry-section" id="enquiry">
-      <div>
-        <p class="eyebrow" data-en="LET’S TALK" data-hi="बातचीत करें">LET’S TALK</p>
-        <h2 data-en="Have a question about an LIC plan?" data-hi="LIC प्लान के बारे में कोई सवाल है?">Have a question about an LIC plan?</h2>
-        <p class="section-intro" data-en="Send an enquiry and request a call back. A team member can contact you to understand what information you need." data-hi="अपनी पूछताछ भेजें और कॉल बैक का अनुरोध करें। आपकी ज़रूरत समझने के लिए टीम का सदस्य आपसे संपर्क कर सकता है।">Send an enquiry and request a call back. A team member can contact you to understand what information you need.</p>
-        <p class="privacy-note" data-en="Please do not enter Aadhaar, PAN, bank details, medical records or policy documents in this form." data-hi="कृपया इस फॉर्म में आधार, पैन, बैंक विवरण, मेडिकल रिकॉर्ड या पॉलिसी दस्तावेज़ न डालें।">Please do not enter Aadhaar, PAN, bank details, medical records or policy documents in this form.</p>
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-photo-card">
+          <img src="assets/advisor.jpg" alt="Advisor - Wealth With Sarode" />
+          <div class="about-badge"><strong>Wealth With Sarode</strong><span>Personal Financial Guidance</span></div>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow" data-i18n="meetAdvisor">MEET YOUR ADVISOR</div>
+          <h2 data-i18n="aboutTitle">Financial decisions, <span>made simpler.</span></h2>
+          <p data-i18n="aboutText">मैं आपके financial goals को समझकर insurance, savings, retirement और wealth-planning options को सरल भाषा में समझाने पर focus करता हूँ.</p>
+          <div class="feature-list">
+            <div><b>01</b><span><strong>Goal-based discussion</strong><small>आपके उद्देश्य से शुरू होने वाली planning.</small></span></div>
+            <div><b>02</b><span><strong>Personalised guidance</strong><small>आपकी जरूरत के अनुसार options की तुलना.</small></span></div>
+            <div><b>03</b><span><strong>Long-term relationship</strong><small>सिर्फ policy नहीं, ongoing guidance.</small></span></div>
+          </div>
+          <a href="#enquiry" class="btn btn-dark">Talk to Me <span>→</span></a>
+        </div>
       </div>
-      <form id="leadForm">
-        <label><span data-en="Your name" data-hi="आपका नाम">Your name</span><input name="name" required maxlength="80" autocomplete="name" placeholder="Full name"></label>
-        <label><span data-en="Mobile number" data-hi="मोबाइल नंबर">Mobile number</span><input name="phone" type="tel" required inputmode="tel" maxlength="15" autocomplete="tel" placeholder="10-digit mobile number"></label>
-        <label><span data-en="Preferred language" data-hi="पसंदीदा भाषा">Preferred language</span><select name="language"><option value="English">English</option><option value="Hindi">हिन्दी</option></select></label>
-        <label><span data-en="What would you like to discuss?" data-hi="आप किस बारे में बात करना चाहते हैं?">What would you like to discuss?</span>
-          <select name="interest" required>
-            <option value="" data-en="Select an option" data-hi="विकल्प चुनें">Select an option</option>
-            <option value="LIC plan information">LIC plan information</option>
-            <option value="Term insurance">Term insurance</option>
-            <option value="Child / education planning">Child / education planning</option>
-            <option value="Retirement planning">Retirement planning</option>
-            <option value="Existing policy query">Existing policy query</option>
-            <option value="General financial awareness">General financial awareness</option>
-          </select>
-        </label>
-        <label><span data-en="Your question (optional)" data-hi="आपका सवाल (वैकल्पिक)">Your question (optional)</span><textarea name="message" rows="3" maxlength="700" placeholder="Tell us briefly what you want to know"></textarea></label>
-        <label class="consent"><input type="checkbox" name="consent" required><span data-en="I agree to be contacted about this enquiry. I have read the privacy note." data-hi="मैं इस पूछताछ के संबंध में संपर्क किए जाने की सहमति देता/देती हूं। मैंने गोपनीयता सूचना पढ़ ली है।">I agree to be contacted about this enquiry. I have read the privacy note.</span></label>
-        <button class="button primary submit" type="submit" data-en="Submit enquiry" data-hi="पूछताछ भेजें">Submit enquiry</button>
-        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
-        <p class="tiny">Submitting this form does not constitute an insurance application or guarantee of policy issuance.</p>
-      </form>
+    </section>
+
+    <section id="process" class="section process-section">
+      <div class="container">
+        <div class="section-heading center">
+          <div class="eyebrow" data-i18n="simpleProcess">SIMPLE PROCESS</div>
+          <h2 data-i18n="processTitle">बस 3 steps में <span>शुरुआत करें</span></h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-card"><span>01</span><h3>Enquiry भेजें</h3><p>नीचे अपना basic information और interest submit करें.</p></div>
+          <div class="process-card"><span>02</span><h3>Consultation</h3><p>आपकी जरूरत और goals पर one-to-one discussion होगा.</p></div>
+          <div class="process-card"><span>03</span><h3>Plan समझें</h3><p>Relevant options, terms और eligibility को समझकर informed decision लें.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="enquiry" class="section enquiry-section">
+      <div class="container enquiry-grid">
+        <div class="enquiry-copy">
+          <div class="eyebrow" data-i18n="getInTouch">GET IN TOUCH</div>
+          <h2 data-i18n="enquiryTitle">अपने लिए सही plan जानना है?</h2>
+          <p data-i18n="enquiryText">अपनी details भेजिए। मैं आपसे संपर्क करके आपकी requirement समझने में मदद करूंगा.</p>
+          <div class="contact-cards">
+            <a id="whatsappBtn" class="contact-card" href="#"><span>WA</span><div><strong>WhatsApp</strong><small id="whatsappNumberDisplay">+91 80801 85241 · Quick enquiry</small></div></a>
+            <a id="callBtn2" class="contact-card" href="#"><span>☎</span><div><strong>Call</strong><small id="callNumberDisplay">+91 80801 85241 · Speak directly</small></div></a>
+          </div>
+        </div>
+
+        <form id="leadForm" class="lead-form">
+          <div class="form-header"><h3 data-i18n="formTitle">Free Consultation</h3><p data-i18n="formText">आपकी जानकारी सुरक्षित रूप से enquiry के लिए इस्तेमाल की जाएगी.</p></div>
+          <div class="form-grid">
+            <label>Full Name*<input required name="name" type="text" placeholder="आपका नाम" /></label>
+            <label>Mobile Number*<input required name="mobile" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10 digit mobile number" /></label>
+            <label>Email<input name="email" type="email" placeholder="you@example.com" /></label>
+            <label>City*<input required name="city" type="text" placeholder="आपका शहर" /></label>
+            <label>Age Group<select required name="age"><option value="">Select</option><option>18–30</option><option>31–40</option><option>41–50</option><option>51–60</option><option>60+</option></select></label>
+            <label>Occupation<select name="occupation"><option value="">Select</option><option>Business</option><option>Salaried</option><option>Professional</option><option>Self Employed</option><option>Retired</option><option>Other</option></select></label>
+            <label class="full">What are you interested in?<select required name="interest"><option value="">Choose your requirement</option><option>Family Protection</option><option>Child Future Planning</option><option>Retirement Planning</option><option>Wealth Creation</option><option>Income / Annuity Plan</option><option>Existing Policy Review</option><option>Not Sure — Need Guidance</option></select></label>
+            <label class="full">Approximate budget<select name="budget"><option value="">Select (optional)</option><option>Below ₹5 Lakh</option><option>₹5–10 Lakh</option><option>₹10–25 Lakh</option><option>₹25–50 Lakh</option><option>₹50 Lakh+</option></select></label>
+            <label class="full">Your message<textarea name="message" rows="3" placeholder="आप किस बारे में जानना चाहते हैं?"></textarea></label>
+          </div>
+          <label class="consent"><input required type="checkbox" name="consent" /> <span>मैं सहमत हूँ कि Wealth With Sarode मेरी enquiry के संबंध में मुझसे phone/WhatsApp/email पर संपर्क कर सकता है.</span></label>
+          <button class="btn btn-gold form-submit" type="submit" data-i18n="submit">Submit Enquiry <span>→</span></button>
+          <p class="form-note">* कृपया Aadhaar, PAN, bank account, OTP या अन्य अत्यधिक संवेदनशील जानकारी इस form में न भेजें.</p>
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-brand">WEALTH <b>WITH SARODE</b></div>
-    <p data-en="Financial awareness and insurance education." data-hi="वित्तीय जागरूकता और बीमा शिक्षा।">Financial awareness and insurance education.</p>
-    <p class="disclaimer">Wealth With Sarode is an independent informational website. LIC is a trademark of Life Insurance Corporation of India. This website is not an official LIC website. Product features, eligibility, premiums and benefits are subject to official policy documents and insurer terms. No returns or benefits are guaranteed here.</p>
-    <p>© <span id="year"></span> Wealth With Sarode</p>
+    <div class="container footer-grid">
+      <div><img class="footer-logo" src="assets/wealth-with-sarode.png" alt="Wealth With Sarode" /><p>Professional financial guidance for your goals.</p></div>
+      <div><h4>Quick Links</h4><a href="#plans">Plans</a><a href="#about" data-i18n="navAbout">About</a><a href="#enquiry">Enquiry</a></div>
+      <div><h4>LIC</h4><p>LIC-related product information is subject to applicable terms, conditions and official product documents.</p><a href="https://www.licindia.in/" target="_blank" rel="noopener">Visit official LIC website ↗</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container">© <span id="year"></span> Wealth With Sarode. All rights reserved. <span>•</span> Plan terms & eligibility apply.</div></div>
   </footer>
 
-  <script src="app.js"></script>
+  <a id="floatingWhatsApp" class="floating-wa" href="#" aria-label="WhatsApp">WA</a>
+  <script src="script.js"></script>
 </body>
 </html>
