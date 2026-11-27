@@ -17,3 +17,24 @@ body{background:#fffdf3;color:#082b55}
 .language-switch button{border:1px solid rgba(255,255,255,.28);background:transparent;color:#fff;padding:7px 10px;border-radius:8px;font:600 11px Inter,Arial;cursor:pointer}
 .language-switch button.active,.language-switch button:hover{background:#f2c230;color:#082b55;border-color:#f2c230}
 @media(max-width:700px){.nav-wrap{height:auto;min-height:68px;flex-wrap:wrap;padding:9px 0}.language-switch{margin:0 0 0 auto}.language-switch button{padding:6px 8px}.site-header nav{width:100%;justify-content:flex-end}.site-header nav a:not(.nav-cta){display:none}}
+/* Bigger Wealth With Sarode logo */
+.brand img {
+  width: 220px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.nav-wrap {
+  height: 92px;
+}
+
+@media (max-width: 700px) {
+  .brand img {
+    width: 175px;
+    height: 60px;
+  }
+
+  .nav-wrap {
+    height: 76px;
+  }
+}
