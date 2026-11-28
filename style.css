@@ -50,19 +50,28 @@ body{background:#fffdf3;color:#082b55}
   position: relative;
   margin-top: 40px;
   padding: 0 45px;
-}
-
 .plan-track {
   display: flex;
   gap: 22px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: #d5a900 #e5eaf5;
   padding: 15px 5px 25px;
 }
 
 .plan-track::-webkit-scrollbar {
-  display: none;
+  height: 8px;
+}
+
+.plan-track::-webkit-scrollbar-track {
+  background: #e5eaf5;
+  border-radius: 10px;
+}
+
+.plan-track::-webkit-scrollbar-thumb {
+  background: #d5a900;
+  border-radius: 10px;
 }
 
 .plan-card {
@@ -89,7 +98,6 @@ body{background:#fffdf3;color:#082b55}
   display: block;
   background: #ffffff;
 }
-
 .plan-card-content {
   padding: 22px;
   position: relative;
