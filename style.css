@@ -46,10 +46,13 @@ body{background:#fffdf3;color:#082b55}
   overflow: hidden;
 }
 
+
 .plan-slider {
   position: relative;
   margin-top: 40px;
   padding: 0 45px;
+}
+
 .plan-track {
   display: flex;
   gap: 22px;
@@ -102,9 +105,6 @@ body{background:#fffdf3;color:#082b55}
   padding: 0;
 }
 
-}
-
-}
 .plan-card-content {
   padding: 22px;
   position: relative;
@@ -311,4 +311,228 @@ body{background:#fffdf3;color:#082b55}
 .plan-card-content a:hover {
   color: #ffffff;
   border-color: #ffffff;
+}
+/* HEADER BRANDING */
+.header-branding {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.lic-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #ffffff;
+}
+
+.lic-header strong {
+  background: #ffdc62;
+  color: #082b55;
+  padding: 4px 7px;
+  border-radius: 4px;
+  font-size: 19px;
+}
+
+.lic-header small {
+  font-size: 8px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.advisor-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 14px 5px;
+  text-align: center;
+  color: #082b55;
+}
+
+.advisor-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.advisor-stats strong {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.advisor-stats span {
+  font-size: 10px;
+}
+
+.advisor-contact {
+  display: flex;
+  gap: 10px;
+  padding: 0 0 16px;
+}
+
+.advisor-contact a {
+  flex: 1;
+  text-align: center;
+  padding: 11px 5px;
+  border-radius: 9px;
+  background: #082b55;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.advisor-contact a:first-child {
+  background: #1b9b59;
+}
+
+@media (max-width: 700px) {
+  .header-branding {
+    gap: 7px;
+  }
+
+  .lic-header small {
+    display: none;
+  }
+
+  .header-menu {
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+/* HERO IMAGE AND CARD FIX */
+
+.advisor-stage {
+  min-height: auto;
+  padding: 15px 0;
+}
+
+.stage-card {
+  width: min(450px, 100%);
+  padding: 18px 18px 0;
+}
+
+.advisor-photo-wrap {
+  height: 500px;
+  background: #ffffff;
+}
+
+.advisor-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: none;
+}
+
+.advisor-photo-wrap:after {
+  height: 25%;
+}
+
+@media (max-width: 700px) {
+  .advisor-stage {
+    padding: 0;
+  }
+
+  .stage-card {
+    width: 100%;
+  }
+
+  .advisor-photo-wrap {
+    height: 430px;
+  }
+}
+/* HERO RESPONSIVE FIX */
+
+@media (max-width: 700px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .trust-row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .advisor-photo-wrap {
+    height: 400px;
+  }
+
+  .advisor-label strong {
+    font-size: 19px;
+  }
+}
+
+
+/* FINAL RESPONSIVE AND LAYOUT FIX */
+
+@media (min-width: 701px) {
+  .advisor-photo-wrap {
+    height: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-wrap {
+    gap: 8px;
+  }
+
+  .header-branding {
+    min-width: 0;
+  }
+
+  .brand img {
+    width: 135px;
+    height: 55px;
+  }
+
+  .header-menu {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .language-switch {
+    margin: 0;
+    gap: 3px;
+  }
+
+  .language-switch button {
+    padding: 5px 6px;
+    font-size: 10px;
+  }
+
+  .site-header nav {
+    display: none;
+  }
+
+  .advisor-photo-wrap {
+    height: 400px;
+  }
+
+  .stage-card {
+    max-width: 450px;
+  }
+
+  .advisor-stats strong {
+    font-size: 15px;
+  }
+
+  .advisor-contact a {
+    font-size: 11px;
+  }
 }
