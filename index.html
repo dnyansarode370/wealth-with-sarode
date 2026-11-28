@@ -4,190 +4,439 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Wealth With Sarode - LIC financial planning and personalised financial guidance. Book a consultation and submit an enquiry online." />
-  <meta name="theme-color" content="#0b1f42" />
-  <title>Wealth With Sarode | LIC Financial Advisor</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="Wealth With Sarode - Personalised financial guidance, family protection, child future planning, retirement and wealth creation."
+  />
+
+  <meta name="theme-color" content="#0b1f42" />
+
+  <title>Wealth With Sarode | Financial Guidance</title>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  
-<div class="advisor-profile-card">
+  <!-- ================= HEADER ================= -->
 
-  <!-- Profile Image -->
-  <div class="advisor-profile-frame">
-    <div class="advisor-profile-image">
-      <img src="lic.png" alt="Wealth With Sarode Financial Advisor">
+  <header class="site-header">
+    <div class="container nav-wrap">
 
-      <div class="advisor-profile-overlay"></div>
+      <div class="header-branding">
+        <a href="#home" class="brand">
+          <img
+            src="assets/wealth-with-sarode.png"
+            alt="Wealth With Sarode"
+          />
+        </a>
+      </div>
 
-      <div class="advisor-profile-badge">
-        Mr. Sarode
+      <div class="header-menu">
+
+        <div class="language-switch">
+          <button type="button" data-lang="mr">मराठी</button>
+          <button type="button" data-lang="hi" class="active">हिन्दी</button>
+          <button type="button" data-lang="en">English</button>
+        </div>
+
+        <nav>
+          <a href="#plans" data-i18n="navPlans">Plans</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#process" data-i18n="navProcess">How It Works</a>
+          <a href="#enquiry" class="nav-cta" data-i18n="consult">
+            Free Consultation
+          </a>
+        </nav>
+
       </div>
     </div>
-  </div>
+  </header>
 
-  <!-- Name and Title -->
-  <div class="advisor-profile-heading">
-    <h2>Wealth With Sarode</h2>
-    <p>LIC Plan Guidance</p>
-  </div>
 
-  <!-- Statistics -->
-  <div class="advisor-profile-stats">
+  <!-- ================= MAIN CONTENT ================= -->
 
-    <div>
-      <strong>480+</strong>
-      <span>FAMILIES</span>
-    </div>
+  <main id="home">
 
-    <div>
-      <strong>100%</strong>
-      <span>CLAIM RECORD</span>
-    </div>
+    <!-- ================= HERO SECTION ================= -->
 
-    <div>
-      <strong>6 Years</strong>
-      <span>EXPERIENCE</span>
-    </div>
+    <section class="hero">
+      <div class="container hero-grid">
 
-  </div>
+        <div class="hero-content">
 
-  <!-- Contact Buttons -->
-  <div class="advisor-profile-actions">
-
-    <a href="https://wa.me/918080185241?text=Namaste%2C%20mujhe%20LIC%20plans%20ki%20jankari%20chahiye."
-       target="_blank"
-       rel="noopener"
-       class="advisor-whatsapp">
-      WhatsApp Us
-    </a>
-
-    <a href="tel:+918080185241"
-       class="advisor-call">
-      Direct Call
-    </a>
-
-  </div>
-
-</div>
-
-<!-- MAIN CONTENT -->
-<main id="home">
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-glow"></div>
-
-    <div class="container hero-grid">
-
-      <!-- LEFT CONTENT -->
-      <div class="hero-copy">
-
-        <div class="eyebrow">
-          <span class="dot"></span>
-          <span data-i18n="eyebrow">
-            LIC Financial Planning & Advisory
+          <span class="eyebrow" data-i18n="eyebrow">
+            Your Family. Your Future. Our Guidance.
           </span>
+
+          <h1 data-i18n="heroTitle">
+            आपके परिवार के भविष्य की
+            <span>सही Financial Planning</span>
+          </h1>
+
+          <p data-i18n="heroText">
+            परिवार की सुरक्षा, बच्चों का भविष्य, रिटायरमेंट और
+            संपत्ति निर्माण के लिए व्यक्तिगत वित्तीय मार्गदर्शन।
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#enquiry" class="btn btn-primary" data-i18n="consult">
+              Free Consultation
+            </a>
+
+            <a
+              href="https://wa.me/918080185241"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp Us
+            </a>
+          </div>
+
+          <div class="trust-stats">
+
+            <div class="trust-stat">
+              <strong>480+</strong>
+              <span>Families Guided</span>
+            </div>
+
+            <div class="trust-stat">
+              <strong>100%</strong>
+              <span>Claim Record</span>
+            </div>
+
+            <div class="trust-stat">
+              <strong>6 Years</strong>
+              <span>Experience</span>
+            </div>
+
+          </div>
+
         </div>
 
-        <h1 data-i18n="heroTitle">
-          आपके आज के फैसले,
-          <br>
-          <span>कल की सुरक्षा।</span>
-        </h1>
 
-        <p class="hero-text" data-i18n="heroText">
-          सही Insurance, Savings, Retirement और Wealth Planning
-          Solutions को समझिए — आपकी जरूरत और Goals के अनुसार।
-        </p>
+        <!-- ADVISOR PROFILE CARD -->
 
-        <div class="hero-actions">
-          <a href="#enquiry" class="btn btn-gold" data-i18n="consult">
-            Free Consultation <span>→</span>
-          </a>
+        <div class="advisor-stage">
 
-          <a href="tel:+918080185241"
-             class="btn btn-outline"
-             data-i18n="callNow">
-            Call Now
-          </a>
-        </div>
+          <div class="stage-card">
 
-        <!-- TRUST METRICS -->
-        <div class="trust-row">
+            <div class="stage-top">
+              <div class="verified">
+                ✓ Financial Guidance
+              </div>
+            </div>
 
-          <div class="trust-item">
-            <strong>480+</strong>
-            <small>Families Guided</small>
+            <div class="advisor-photo-wrap">
+              <img
+                src="lic.png"
+                alt="Wealth With Sarode Financial Advisor"
+                class="advisor-photo"
+              />
+            </div>
+
+            <div class="advisor-info">
+
+              <h2>Wealth With Sarode</h2>
+
+              <p>
+                Personalised Financial Guidance
+              </p>
+
+              <div class="advisor-stats">
+
+                <div>
+                  <strong>480+</strong>
+                  <span>Families</span>
+                </div>
+
+                <div>
+                  <strong>100%</strong>
+                  <span>Claim Record</span>
+                </div>
+
+                <div>
+                  <strong>6 Years</strong>
+                  <span>Experience</span>
+                </div>
+
+              </div>
+
+              <div class="advisor-contact">
+
+                <a href="tel:+918080185241">
+                  Call: 8080185241
+                </a>
+
+                <a
+                  href="https://wa.me/918080185241"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
+
+              </div>
+
+            </div>
+
           </div>
-
-          <div class="divider"></div>
-
-          <div class="trust-item">
-            <strong>100%</strong>
-            <small>Claim Record</small>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="trust-item">
-            <strong>6 Years</strong>
-            <small>Experience</small>
-          </div>
-
         </div>
 
       </div>
+    </section>
 
-      <!-- RIGHT ADVISOR CARD -->
-      <div class="advisor-stage">
 
-        <div class="stage-card">
+    <!-- ================= TICKER ================= -->
 
-          <div class="stage-top">
+    <section class="ticker">
+      <div class="ticker-track">
+        <span>Family Protection</span>
+        <span>Child Future Planning</span>
+        <span>Retirement Planning</span>
+        <span>Wealth Creation</span>
+        <span>Financial Guidance</span>
+      </div>
+    </section>
 
-        
-            <div class="verified">
-              ✓ Financial Guidance
-            </div>
+
+    <!-- ================= PLANS SECTION ================= -->
+
+    <section class="plans-section" id="plans">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-tag" data-i18n="ourFocus">
+            OUR FOCUS
+          </span>
+
+          <h2 data-i18n="plansTitle">
+            Financial Solutions for Every Life Stage
+          </h2>
+
+          <p data-i18n="plansText">
+            आपके जीवन के हर महत्वपूर्ण लक्ष्य के लिए सही योजना चुनने
+            में व्यक्तिगत मार्गदर्शन।
+          </p>
+
+        </div>
+
+
+        <div class="plan-slider" id="planSlider">
+
+          <button
+            type="button"
+            class="slider-btn prev"
+            aria-label="Previous plans"
+          >
+            &#10094;
+          </button>
+
+          <div class="plan-track">
+
+            <!-- PLAN 1 -->
+
+            <article class="plan-card">
+
+              <img
+                src="assets/family-protection.png"
+                alt="Family Protection"
+                loading="lazy"
+              />
+
+              <div class="plan-card-content">
+
+                <h3 data-i18n="familyPlan">
+                  Family Protection
+                </h3>
+
+                <p>
+                  Personal guidance for your family protection
+                  and insurance needs.
+                </p>
+
+                <a href="#enquiry" data-i18n="discussPlan">
+                  Discuss this plan →
+                </a>
+
+              </div>
+            </article>
+
+
+            <!-- PLAN 2 -->
+
+            <article class="plan-card">
+
+              <img
+                src="assets/child-future.png"
+                alt="Child Future Planning"
+                loading="lazy"
+              />
+
+              <div class="plan-card-content">
+
+                <h3 data-i18n="childPlan">
+                  Child Future Planning
+                </h3>
+
+                <p>
+                  Plan ahead for your child's education and
+                  important future milestones.
+                </p>
+
+                <a href="#enquiry" data-i18n="discussPlan">
+                  Discuss this plan →
+                </a>
+
+              </div>
+            </article>
+
+
+            <!-- PLAN 3 -->
+
+            <article class="plan-card">
+
+              <img
+                src="assets/retirement.png"
+                alt="Retirement Planning"
+                loading="lazy"
+              />
+
+              <div class="plan-card-content">
+
+                <h3 data-i18n="retirementPlan">
+                  Retirement Planning
+                </h3>
+
+                <p>
+                  Prepare for your retirement with thoughtful
+                  financial planning.
+                </p>
+
+                <a href="#enquiry" data-i18n="discussPlan">
+                  Discuss this plan →
+                </a>
+
+              </div>
+            </article>
+
+
+            <!-- PLAN 4 -->
+
+            <article class="plan-card">
+
+              <img
+                src="assets/wealth-creation.png"
+                alt="Wealth Creation"
+                loading="lazy"
+              />
+
+              <div class="plan-card-content">
+
+                <h3 data-i18n="wealthPlan">
+                  Wealth Creation
+                </h3>
+
+                <p>
+                  Explore financial planning options for your
+                  long-term goals.
+                </p>
+
+                <a href="#enquiry" data-i18n="discussPlan">
+                  Discuss this plan →
+                </a>
+
+              </div>
+            </article>
+
+
+            <!-- PLAN 5 -->
+
+            <article class="plan-card">
+
+              <img
+                src="assets/special-income.png"
+                alt="Special Income Planning"
+                loading="lazy"
+              />
+
+              <div class="plan-card-content">
+
+                <h3 data-i18n="incomePlan">
+                  Special Income Planning
+                </h3>
+
+                <p>
+                  Understand income planning options based on
+                  your financial needs.
+                </p>
+
+                <a href="#enquiry" data-i18n="discussPlan">
+                  Discuss this plan →
+                </a>
+
+              </div>
+            </article>
 
           </div>
 
-          <div class="advisor-photo-wrap">
 
-            <div class="gold-ring"></div>
+          <button
+            type="button"
+            class="slider-btn next"
+            aria-label="Next plans"
+          >
+            &#10095;
+          </button>
 
-            <img
-              src="lic.png"
-              alt="Wealth With Sarode Financial Advisor"
-              class="advisor-photo"
-            >
+        </div>
 
-            <div class="advisor-label">
-              <strong>Wealth With Sarode</strong>
-              <span>LIC Plan Guidance</span>
-            </div>
 
-          </div>
+        <div id="sliderDots" class="slider-dots"></div>
 
-          <!-- ADVISOR EXPERIENCE -->
-          <div class="advisor-stats">
+      </div>
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about-section" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-image">
+          <img
+            src="assets/advisor.jpg"
+            alt="Wealth With Sarode Advisor"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="about-content">
+
+          <span class="section-tag" data-i18n="meetAdvisor">
+            MEET YOUR ADVISOR
+          </span>
+
+          <h2 data-i18n="aboutTitle">
+            Financial Planning with Personal Guidance
+          </h2>
+
+          <p data-i18n="aboutText">
+            Wealth With Sarode का उद्देश्य परिवारों को उनके
+            वित्तीय लक्ष्यों को समझने और उपयुक्त योजनाओं के बारे
+            में जानकारी प्राप्त करने में मदद करना है।
+          </p>
+
+          <div class="about-highlights">
 
             <div>
               <strong>480+</strong>
-              <span>Families</span>
-            </div>
-
-            <div>
-              <strong>100%</strong>
-              <span>Claim Record</span>
+              <span>Families Guided</span>
             </div>
 
             <div>
@@ -197,446 +446,295 @@
 
           </div>
 
-          <!-- CONTACT BUTTONS -->
-          <div class="advisor-contact">
-
-            <a
-              href="https://wa.me/918080185241?text=Namaste%2C%20mujhe%20LIC%20plans%20ki%20jankari%20chahiye."
-              target="_blank"
-              rel="noopener noreferrer">
-              WhatsApp Us
-            </a>
-
-            <a href="tel:+918080185241">
-              Direct Call
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- MOVING TICKER -->
-  <section class="ticker">
-    <div class="ticker-track">
-
-      <span>FAMILY PROTECTION</span><i>•</i>
-      <span>CHILDREN'S FUTURE</span><i>•</i>
-      <span>RETIREMENT PLANNING</span><i>•</i>
-      <span>WEALTH CREATION</span><i>•</i>
-      <span>SAVINGS</span><i>•</i>
-
-      <span>FAMILY PROTECTION</span><i>•</i>
-      <span>CHILDREN'S FUTURE</span><i>•</i>
-      <span>RETIREMENT PLANNING</span><i>•</i>
-      <span>WEALTH CREATION</span><i>•</i>
-      <span>SAVINGS</span><i>•</i>
-
-    </div>
-  </section>
-
-  <!-- YOUR EXISTING OUR FOCUS SECTION STARTS HERE -->
-
-
-    <!-- PLANS SECTION -->
-
-    
-<section id="plans" class="section plans-section">
-  <div class="container">
-    <div class="section-heading center">
-      <div class="eyebrow" data-i18n="ourFocus">OUR FOCUS</div>
-      <h2 data-i18n="plansTitle">
-        आपके लक्ष्य के लिए <span>सही योजना</span>
-      </h2>
-      <p data-i18n="plansText">
-        अपने financial goals के अनुसार सही planning को समझें।
-      </p>
-    </div>
-
-    <div class="plan-slider" id="planSlider">
-      <button class="slider-btn prev" type="button" aria-label="Previous plan">‹</button>
-
-      <div class="plan-track">
-
-        <article class="plan-card active">
-          <img src="assets/family-protection.png" alt="Family Protection">
-          <div class="plan-card-content">
-            <h3>Family Protection</h3>
-            <p>परिवार की financial security और protection needs के लिए guidance.</p>
-            <a href="#enquiry">Discuss this plan →</a>
-          </div>
-        </article>
-
-        <article class="plan-card">
-          <img src="assets/child-future.png" alt="Child Future">
-          <div class="plan-card-content">
-            <h3>Child Future</h3>
-            <p>बच्चों की education और future goals के लिए planning options.</p>
-            <a href="#enquiry">Discuss this plan →</a>
-          </div>
-        </article>
-
-        <article class="plan-card">
-          <img src="assets/retirement.png" alt="Retirement Planning">
-          <div class="plan-card-content">
-            <h3>Retirement Planning</h3>
-            <p>Retirement के बाद financial independence के लिए planning.</p>
-            <a href="#enquiry">Discuss this plan →</a>
-          </div>
-        </article>
-
-        <article class="plan-card">
-          <img src="assets/wealth-creation.png" alt="Wealth Creation">
-          <div class="plan-card-content">
-            <h3>Wealth Creation</h3>
-            <p>आपके financial objectives के अनुसार wealth planning guidance.</p>
-            <a href="#enquiry">Discuss this plan →</a>
-          </div>
-        </article>
-
-        <article class="plan-card">
-          <img src="assets/special-income.png" alt="Special Income Plan">
-          <div class="plan-card-content">
-            <h3>Special Income Plan</h3>
-            <p>Income-oriented options की जानकारी और eligibility समझें.</p>
-            <a href="#enquiry">Discuss this plan →</a>
-          </div>
-        </article>
-
-      </div>
-
-      <button class="slider-btn next" type="button" aria-label="Next plan">›</button>
-    </div>
-
-    <div class="slider-dots" id="sliderDots"></div>
-  </div>
-</section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section about-section">
-      <div class="container about-grid">
-
-        <div class="about-photo-card">
-          <img
-            src="assets/advisor.jpg"
-            alt="Advisor - Wealth With Sarode"
-          />
-
-          <div class="about-badge">
-            <strong>Wealth With Sarode</strong>
-            <span>Personal Financial Guidance</span>
-          </div>
-        </div>
-
-        <div class="about-copy">
-          <div class="eyebrow" data-i18n="meetAdvisor">MEET YOUR ADVISOR</div>
-
-          <h2 data-i18n="aboutTitle">
-            Financial decisions, <span>made simpler.</span>
-          </h2>
-
-          <p data-i18n="aboutText">
-            मैं आपके financial goals को समझकर insurance, savings, retirement और wealth-planning options को सरल भाषा में समझाने पर focus करता हूँ.
-          </p>
-
-          <div class="feature-list">
-
-            <div>
-              <b>01</b>
-              <span>
-                <strong>Goal-based discussion</strong>
-                <small>आपके उद्देश्य से शुरू होने वाली planning.</small>
-              </span>
-            </div>
-
-            <div>
-              <b>02</b>
-              <span>
-                <strong>Personalised guidance</strong>
-                <small>आपकी जरूरत के अनुसार options की तुलना.</small>
-              </span>
-            </div>
-
-            <div>
-              <b>03</b>
-              <span>
-                <strong>Long-term relationship</strong>
-                <small>सिर्फ policy नहीं, ongoing guidance.</small>
-              </span>
-            </div>
-
-          </div>
-
-          <a href="#enquiry" class="btn btn-dark">
-            Talk to Me <span>→</span>
+          <a href="#enquiry" class="btn btn-primary">
+            Get Personal Guidance →
           </a>
+
         </div>
 
       </div>
     </section>
 
-    <!-- PROCESS SECTION -->
-    <section id="process" class="section process-section">
+
+    <!-- ================= PROCESS SECTION ================= -->
+
+    <section class="process-section" id="process">
+
       <div class="container">
 
-        <div class="section-heading center">
-          <div class="eyebrow" data-i18n="simpleProcess">SIMPLE PROCESS</div>
+        <div class="section-heading">
+
+          <span class="section-tag" data-i18n="simpleProcess">
+            SIMPLE PROCESS
+          </span>
 
           <h2 data-i18n="processTitle">
-            बस 3 steps में <span>शुरुआत करें</span>
+            Your Financial Planning Journey
           </h2>
+
+          <p>
+            सही योजना समझने और चुनने के लिए आसान प्रक्रिया।
+          </p>
+
         </div>
+
 
         <div class="process-grid">
 
           <div class="process-card">
-            <span>01</span>
-            <h3>Enquiry भेजें</h3>
-            <p>नीचे अपना basic information और interest submit करें.</p>
-          </div>
-
-          <div class="process-card">
-            <span>02</span>
-            <h3>Consultation</h3>
-            <p>आपकी जरूरत और goals पर one-to-one discussion होगा.</p>
-          </div>
-
-          <div class="process-card">
-            <span>03</span>
-            <h3>Plan समझें</h3>
-            <p>Relevant options, terms और eligibility को समझकर informed decision लें.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ENQUIRY SECTION -->
-    <section id="enquiry" class="section enquiry-section">
-      <div class="container enquiry-grid">
-
-        <div class="enquiry-copy">
-          <div class="eyebrow" data-i18n="getInTouch">GET IN TOUCH</div>
-
-          <h2 data-i18n="enquiryTitle">
-            अपने लिए सही plan जानना है?
-          </h2>
-
-          <p data-i18n="enquiryText">
-            अपनी details भेजिए। मैं आपसे संपर्क करके आपकी requirement समझने में मदद करूंगा.
-          </p>
-
-          <div class="contact-cards">
-
-            <a
-              id="whatsappBtn"
-              class="contact-card"
-              href="https://wa.me/918080185241"
-              target="_blank"
-              rel="noopener"
-            >
-              <span>WA</span>
-              <div>
-                <strong>WhatsApp</strong>
-                <small id="whatsappNumberDisplay">+91 80801 85241 · Quick enquiry</small>
-              </div>
-            </a>
-
-            <a
-              id="callBtn2"
-              class="contact-card"
-              href="tel:+918080185241"
-            >
-              <span>☎</span>
-              <div>
-                <strong>Call</strong>
-                <small id="callNumberDisplay">+91 80801 85241 · Speak directly</small>
-              </div>
-            </a>
-
-          </div>
-        </div>
-
-        <form id="leadForm" class="lead-form">
-
-          <div class="form-header">
-            <h3 data-i18n="formTitle">Free Consultation</h3>
-            <p data-i18n="formText">
-              आपकी जानकारी सुरक्षित रूप से enquiry के लिए इस्तेमाल की जाएगी.
+            <span class="process-number">01</span>
+            <h3>Share Your Goals</h3>
+            <p>
+              अपनी जरूरतों और भविष्य के वित्तीय लक्ष्यों के बारे
+              में बताएं।
             </p>
           </div>
 
-          <div class="form-grid">
+          <div class="process-card">
+            <span class="process-number">02</span>
+            <h3>Understand Your Options</h3>
+            <p>
+              उपलब्ध विकल्पों और उनकी विशेषताओं को समझें।
+            </p>
+          </div>
 
-            <label>
-              Full Name*
-              <input required name="name" type="text" placeholder="आपका नाम" />
-            </label>
+          <div class="process-card">
+            <span class="process-number">03</span>
+            <h3>Make an Informed Choice</h3>
+            <p>
+              अपनी जरूरतों के अनुसार सोच-समझकर निर्णय लें।
+            </p>
+          </div>
 
-            <label>
-              Mobile Number*
-              <input
-                required
-                name="mobile"
-                type="tel"
-                inputmode="numeric"
-                pattern="[0-9]{10}"
-                maxlength="10"
-                placeholder="10 digit mobile number"
-              />
-            </label>
+        </div>
 
-            <label>
-              Email
-              <input name="email" type="email" placeholder="you@example.com" />
-            </label>
+      </div>
+    </section>
 
-            <label>
-              City*
-              <input required name="city" type="text" placeholder="आपका शहर" />
-            </label>
 
-            <label>
-              Age Group
-              <select required name="age">
-                <option value="">Select</option>
-                <option>18–30</option>
-                <option>31–40</option>
-                <option>41–50</option>
-                <option>51–60</option>
-                <option>60+</option>
-              </select>
-            </label>
+    <!-- ================= ENQUIRY SECTION ================= -->
 
-            <label>
-              Occupation
-              <select name="occupation">
-                <option value="">Select</option>
-                <option>Business</option>
-                <option>Salaried</option>
-                <option>Professional</option>
-                <option>Self Employed</option>
-                <option>Retired</option>
-                <option>Other</option>
-              </select>
-            </label>
+    <section class="enquiry-section" id="enquiry">
 
-            <label class="full">
-              What are you interested in?
-              <select required name="interest">
-                <option value="">Choose your requirement</option>
-                <option>Family Protection</option>
-                <option>Child Future Planning</option>
-                <option>Retirement Planning</option>
-                <option>Wealth Creation</option>
-                <option>Income / Annuity Plan</option>
-                <option>Existing Policy Review</option>
-                <option>Not Sure — Need Guidance</option>
-              </select>
-            </label>
+      <div class="container enquiry-grid">
 
-            <label class="full">
-              Approximate budget
-              <select name="budget">
-                <option value="">Select (optional)</option>
-                <option>Below ₹5 Lakh</option>
-                <option>₹5–10 Lakh</option>
-                <option>₹10–25 Lakh</option>
-                <option>₹25–50 Lakh</option>
-                <option>₹50 Lakh+</option>
-              </select>
-            </label>
+        <div class="enquiry-content">
 
-            <label class="full">
-              Your message
-              <textarea name="message" rows="3" placeholder="आप किस बारे में जानना चाहते हैं?"></textarea>
-            </label>
+          <span class="section-tag" data-i18n="getInTouch">
+            GET IN TOUCH
+          </span>
+
+          <h2 data-i18n="enquiryTitle">
+            Let's Plan Your Financial Future
+          </h2>
+
+          <p data-i18n="enquiryText">
+            अपनी जरूरत बताएं। हम आपसे संपर्क करके आपकी
+            वित्तीय योजना पर चर्चा करेंगे।
+          </p>
+
+          <div class="contact-details">
+
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+918080185241">8080185241</a>
+            </p>
+
+            <p>
+              <strong>WhatsApp:</strong>
+              <a
+                href="https://wa.me/918080185241"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chat with us
+              </a>
+            </p>
 
           </div>
 
-          <label class="consent">
-            <input required type="checkbox" name="consent" />
-            <span>
-              मैं सहमत हूँ कि Wealth With Sarode मेरी enquiry के संबंध में मुझसे phone/WhatsApp/email पर संपर्क कर सकता है.
-            </span>
-          </label>
+        </div>
 
-          <button class="btn btn-gold form-submit" type="submit" data-i18n="submit">
-            Submit Enquiry <span>→</span>
-          </button>
 
-          <p class="form-note">
-            * कृपया Aadhaar, PAN, bank account, OTP या अन्य अत्यधिक संवेदनशील जानकारी इस form में न भेजें.
+        <div class="enquiry-form-wrap">
+
+          <h3 data-i18n="formTitle">
+            Request a Consultation
+          </h3>
+
+          <p data-i18n="formText">
+            Fill in your details and we will get in touch.
           </p>
 
-          <div id="formStatus" class="form-status" aria-live="polite"></div>
+          <form id="leadForm">
 
-        </form>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Mobile Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your mobile number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="plan">Interested In</label>
+
+              <select id="plan" name="plan" required>
+                <option value="">Select a plan</option>
+                <option value="Family Protection">
+                  Family Protection
+                </option>
+                <option value="Child Future Planning">
+                  Child Future Planning
+                </option>
+                <option value="Retirement Planning">
+                  Retirement Planning
+                </option>
+                <option value="Wealth Creation">
+                  Wealth Creation
+                </option>
+                <option value="Special Income Planning">
+                  Special Income Planning
+                </option>
+                <option value="Other">
+                  Other
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell us about your requirements"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-i18n="submit"
+            >
+              Submit Enquiry
+            </button>
+
+            <p id="formStatus" role="status" aria-live="polite"></p>
+
+          </form>
+
+        </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-grid">
 
-      <div>
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-content">
+
+      <div class="footer-brand">
         <img
-          class="footer-logo"
           src="assets/wealth-with-sarode.png"
           alt="Wealth With Sarode"
+          loading="lazy"
         />
-        <p>Professional financial guidance for your goals.</p>
-      </div>
 
-      <div>
-        <h4>Quick Links</h4>
-        <a href="#plans">Plans</a>
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#enquiry">Enquiry</a>
-      </div>
-
-      <div>
-        <h4>LIC</h4>
         <p>
-          LIC-related product information is subject to applicable terms,
-          conditions and official product documents.
+          Personalised Financial Guidance for Your Family's Future.
         </p>
-        <a href="https://www.licindia.in/" target="_blank" rel="noopener">
-          Visit official LIC website ↗
+      </div>
+
+
+      <div class="footer-links">
+
+        <h3>Quick Links</h3>
+
+        <a href="#home">Home</a>
+        <a href="#plans">Our Plans</a>
+        <a href="#about">About</a>
+        <a href="#process">How It Works</a>
+        <a href="#enquiry">Contact</a>
+
+      </div>
+
+
+      <div class="footer-contact">
+
+        <h3>Contact Us</h3>
+
+        <a href="tel:+918080185241">
+          8080185241
         </a>
+
+        <a
+          href="https://wa.me/918080185241"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp Us
+        </a>
+
       </div>
 
     </div>
+
 
     <div class="footer-bottom">
-      <div class="container">
-        © <span id="year"></span> Wealth With Sarode. All rights reserved.
-        <span>•</span> Plan terms & eligibility apply.
-        <p>
-          Wealth With Sarode is an independent financial advisory presence
-          and is not the official LIC website.
-        </p>
-      </div>
+
+      <p>
+        © <span id="year"></span> Wealth With Sarode.
+        All Rights Reserved.
+      </p>
+
+      <p class="footer-disclaimer">
+        Wealth With Sarode is an independent financial guidance
+        presence and is not the official website of LIC.
+        Insurance products are subject to applicable policy terms
+        and conditions.
+      </p>
+
     </div>
+
   </footer>
 
-  <!-- FLOATING WHATSAPP -->
+
+  <!-- ================= FLOATING WHATSAPP ================= -->
+
   <a
-    id="floatingWhatsApp"
-    class="floating-wa"
     href="https://wa.me/918080185241"
+    class="floating-whatsapp"
+    id="floatingWhatsApp"
     target="_blank"
-    rel="noopener"
-    aria-label="WhatsApp"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
   >
-    WA
+    WhatsApp
   </a>
+
+
+  <!-- ================= SCRIPTS ================= -->
 
   <script src="script.js"></script>
 
