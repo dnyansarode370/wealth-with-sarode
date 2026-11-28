@@ -70,6 +70,7 @@ if (track && cards.length && dots && next && prev) {
   prev.addEventListener("click", () => goTo(current - 1));
 
   goTo(0);
+  setInterval(() => goTo(current + 1), 3500);
 }
 
   if (window.innerWidth <= 700) track.scrollTo({left: card.offsetLeft - track.offsetLeft - 8, behavior:"smooth"});
