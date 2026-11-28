@@ -84,9 +84,10 @@ body{background:#fffdf3;color:#082b55}
 
 .plan-card > img {
   width: 100%;
-  height: 210px;
-  object-fit: cover;
+  height: 260px;
+  object-fit: contain;
   display: block;
+  background: #ffffff;
 }
 
 .plan-card-content {
