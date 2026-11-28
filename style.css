@@ -71,6 +71,7 @@ body{background:#fffdf3;color:#082b55}
   background: #ffffff;
   border-radius: 18px;
   overflow: hidden;
+  padding: 0;
   box-shadow: 0 8px 28px rgba(11, 31, 66, 0.10);
   border: 1px solid #e5eaf5;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
