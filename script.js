@@ -24,7 +24,8 @@ const waHref = hasPhone ? `https://wa.me/${cleanPhone}?text=${encodeURIComponent
   if (el) { el.href = waHref; el.target = hasPhone ? "_blank" : "_self"; el.title = `WhatsApp ${phoneDisplay}`; }
 });
 
-// Plan slider - Desktop, Tablet and Mobile
+
+// Plan slider - Automatic sliding for all 5 plans
 const track = document.querySelector(".plan-track");
 const cards = [...document.querySelectorAll(".plan-card")];
 const dots = document.getElementById("sliderDots");
@@ -32,53 +33,61 @@ const next = document.querySelector(".slider-btn.next");
 const prev = document.querySelector(".slider-btn.prev");
 
 let current = 0;
+let autoSlide;
 
 if (track && cards.length && dots && next && prev) {
-
   dots.innerHTML = "";
 
   cards.forEach((card, i) => {
     const button = document.createElement("button");
     button.type = "button";
     button.setAttribute("aria-label", `Plan ${i + 1}`);
-
-    button.addEventListener("click", () => goTo(i));
-
+    button.addEventListener("click", () => goTo(i, true));
     dots.appendChild(button);
   });
 
-  function goTo(i) {
+  function goTo(i, resetTimer = false) {
     current = (i + cards.length) % cards.length;
-
-    cards.forEach((card, index) => {
-      card.classList.toggle("active", index === current);
-    });
 
     const card = cards[current];
 
+    const position =
+      card.getBoundingClientRect().left -
+      track.getBoundingClientRect().left +
+      track.scrollLeft;
+
     track.scrollTo({
-      left: card.offsetLeft - track.offsetLeft - 8,
+      left: position,
       behavior: "smooth"
+    });
+
+    cards.forEach((item, index) => {
+      item.classList.toggle("active", index === current);
     });
 
     [...dots.children].forEach((dot, index) => {
       dot.classList.toggle("active", index === current);
     });
+
+    if (resetTimer) startAutoSlide();
   }
 
-  next.addEventListener("click", () => goTo(current + 1));
-  prev.addEventListener("click", () => goTo(current - 1));
+  function startAutoSlide() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => {
+      goTo(current + 1);
+    }, 3500);
+  }
+
+  next.addEventListener("click", () => goTo(current + 1, true));
+  prev.addEventListener("click", () => goTo(current - 1, true));
+
+  track.addEventListener("mouseenter", () => clearInterval(autoSlide));
+  track.addEventListener("mouseleave", startAutoSlide);
 
   goTo(0);
-  setInterval(() => goTo(current + 1), 3500);
+  startAutoSlide();
 }
-
-  if (window.innerWidth <= 700) track.scrollTo({left: card.offsetLeft - track.offsetLeft - 8, behavior:"smooth"});
-  [...dots.children].forEach((d, idx) => d.classList.toggle("active", idx === current));
-}
-next.addEventListener("click",()=>goTo(current+1));
-prev.addEventListener("click",()=>goTo(current-1));
-goTo(0);
 
 // Lead form
 const form = document.getElementById("leadForm");
