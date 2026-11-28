@@ -82,9 +82,6 @@ if (track && cards.length && dots && next && prev) {
   next.addEventListener("click", () => goTo(current + 1, true));
   prev.addEventListener("click", () => goTo(current - 1, true));
 
-  track.addEventListener("mouseenter", () => clearInterval(autoSlide));
-  track.addEventListener("mouseleave", startAutoSlide);
-
   goTo(0);
   startAutoSlide();
 }
