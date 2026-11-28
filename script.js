@@ -76,7 +76,7 @@ if (track && cards.length && dots && next && prev) {
     clearInterval(autoSlide);
     autoSlide = setInterval(() => {
       goTo(current + 1);
-    }, 500);
+    }, 1000);
   }
 
   next.addEventListener("click", () => goTo(current + 1, true));
