@@ -24,31 +24,54 @@ const waHref = hasPhone ? `https://wa.me/${cleanPhone}?text=${encodeURIComponent
   if (el) { el.href = waHref; el.target = hasPhone ? "_blank" : "_self"; el.title = `WhatsApp ${phoneDisplay}`; }
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
-const waNumberDisplay = document.getElementById("whatsappNumberDisplay");
-const callNumberDisplay = document.getElementById("callNumberDisplay");
-if (waNumberDisplay) waNumberDisplay.textContent = `${phoneDisplay} · Quick enquiry`;
-if (callNumberDisplay) callNumberDisplay.textContent = `${phoneDisplay} · Speak directly`;
-
-// Plan slider
+// Plan slider - Desktop, Tablet and Mobile
 const track = document.querySelector(".plan-track");
 const cards = [...document.querySelectorAll(".plan-card")];
 const dots = document.getElementById("sliderDots");
 const next = document.querySelector(".slider-btn.next");
 const prev = document.querySelector(".slider-btn.prev");
+
 let current = 0;
 
-cards.forEach((_, i) => {
-  const b = document.createElement("button");
-  b.type = "button";
-  b.setAttribute("aria-label", `Plan ${i+1}`);
-  b.addEventListener("click", () => goTo(i));
-  dots.appendChild(b);
-});
-function goTo(i){
-  current = (i + cards.length) % cards.length;
-  cards.forEach((c, idx) => c.classList.toggle("active", idx === current));
-  const card = cards[current];
+if (track && cards.length && dots && next && prev) {
+
+  dots.innerHTML = "";
+
+  cards.forEach((card, i) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.setAttribute("aria-label", `Plan ${i + 1}`);
+
+    button.addEventListener("click", () => goTo(i));
+
+    dots.appendChild(button);
+  });
+
+  function goTo(i) {
+    current = (i + cards.length) % cards.length;
+
+    cards.forEach((card, index) => {
+      card.classList.toggle("active", index === current);
+    });
+
+    const card = cards[current];
+
+    track.scrollTo({
+      left: card.offsetLeft - track.offsetLeft - 8,
+      behavior: "smooth"
+    });
+
+    [...dots.children].forEach((dot, index) => {
+      dot.classList.toggle("active", index === current);
+    });
+  }
+
+  next.addEventListener("click", () => goTo(current + 1));
+  prev.addEventListener("click", () => goTo(current - 1));
+
+  goTo(0);
+}
+
   if (window.innerWidth <= 700) track.scrollTo({left: card.offsetLeft - track.offsetLeft - 8, behavior:"smooth"});
   [...dots.children].forEach((d, idx) => d.classList.toggle("active", idx === current));
 }
