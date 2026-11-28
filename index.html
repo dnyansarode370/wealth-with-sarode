@@ -17,151 +17,213 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container nav-wrap">
+  
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container nav-wrap">
 
-      <div class="header-branding">
-
-        <div class="lic-header">
-          <strong>LIC</strong>
-          <small>Life Insurance<br>Corporation of India</small>
-        </div>
-
-        <a class="brand" href="#home" aria-label="Wealth With Sarode home">
-          <img
-            src="assets/wealth-with-sarode.png"
-            alt="Wealth With Sarode logo"
-          />
-        </a>
-
+    <div class="header-branding">
+      <div class="lic-header">
+        <strong>LIC</strong>
+        <small>Life Insurance<br>Corporation of India</small>
       </div>
 
-      <div class="header-menu">
-
-        <div class="language-switch" aria-label="Choose language">
-          <button type="button" data-lang="mr">मराठी</button>
-          <button type="button" data-lang="hi" class="active">हिन्दी</button>
-          <button type="button" data-lang="en">English</button>
-        </div>
-
-        <nav aria-label="Main navigation">
-          <a href="#plans" data-i18n="navPlans">Plans</a>
-          <a href="#about" data-i18n="navAbout">About</a>
-          <a href="#process" data-i18n="navProcess">How It Works</a>
-          <a class="nav-cta" href="#enquiry" data-i18n="consult">Free Consultation</a>
-        </nav>
-
-      </div>
+      <a class="brand" href="#home" aria-label="Wealth With Sarode Home">
+        <img src="assets/wealth-with-sarode.png"
+             alt="Wealth With Sarode Logo">
+      </a>
     </div>
-  </header>
 
-  <main id="home">
+    <div class="header-menu">
+      <div class="language-switch" aria-label="Choose language">
+        <button type="button" data-lang="mr">मराठी</button>
+        <button type="button" data-lang="hi" class="active">हिन्दी</button>
+        <button type="button" data-lang="en">English</button>
+      </div>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="hero-glow"></div>
+      <nav aria-label="Main navigation">
+        <a href="#plans" data-i18n="navPlans">Plans</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#process" data-i18n="navProcess">How It Works</a>
+        <a href="#enquiry" class="nav-cta" data-i18n="consult">
+          Free Consultation
+        </a>
+      </nav>
+    </div>
 
-      <div class="container hero-grid">
+  </div>
+</header>
 
-        <div class="hero-copy">
-          <div class="eyebrow">
-            <span class="dot"></span>
-            <span data-i18n="eyebrow">LIC Financial Planning & Advisory</span>
-          </div>
+<!-- MAIN CONTENT -->
+<main id="home">
 
-          <h1 data-i18n="heroTitle">
-            आपके आज के फैसले,<br>
-            <span>कल की सुरक्षा।</span>
-          </h1>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-glow"></div>
 
-          <p class="hero-text" data-i18n="heroText">
-            सही insurance, savings, retirement और wealth-planning solutions को समझिए — आपकी जरूरत और goals के अनुसार.
-          </p>
+    <div class="container hero-grid">
 
-          <div class="hero-actions">
-            <a href="#enquiry" class="btn btn-gold" data-i18n="consult">
-              Free Consultation <span>→</span>
-            </a>
+      <!-- LEFT CONTENT -->
+      <div class="hero-copy">
 
-            <a id="callBtn" href="tel:+918080185241" class="btn btn-outline" data-i18n="callNow">
-              Call Now
-            </a>
-          </div>
-
-          <div class="trust-row">
-            <div class="trust-item">
-              <strong>LIC</strong>
-              <small>Financial Advisor</small>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="trust-item">
-              <strong>Personalised</strong>
-              <small>Planning Approach</small>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="trust-item">
-              <strong>One-to-One</strong>
-              <small>Consultation</small>
-            </div>
-          </div>
+        <div class="eyebrow">
+          <span class="dot"></span>
+          <span data-i18n="eyebrow">
+            LIC Financial Planning & Advisory
+          </span>
         </div>
 
-        <div class="advisor-stage">
-          <div class="stage-card">
+        <h1 data-i18n="heroTitle">
+          आपके आज के फैसले,
+          <br>
+          <span>कल की सुरक्षा।</span>
+        </h1>
 
-            <div class="stage-top">
-              <div class="lic-badge" aria-label="LIC text branding">
-                <div class="lic-mark">LIC</div>
-                <div class="lic-caption">
-                  LIFE INSURANCE<br>
-                  CORPORATION OF INDIA
-                </div>
-              </div>
+        <p class="hero-text" data-i18n="heroText">
+          सही Insurance, Savings, Retirement और Wealth Planning
+          Solutions को समझिए — आपकी जरूरत और Goals के अनुसार।
+        </p>
 
-              <div class="verified">✓ Professional Advisor</div>
-            </div>
+        <div class="hero-actions">
+          <a href="#enquiry" class="btn btn-gold" data-i18n="consult">
+            Free Consultation <span>→</span>
+          </a>
 
-            <div class="advisor-photo-wrap">
-              <div class="gold-ring"></div>
+          <a href="tel:+918080185241"
+             class="btn btn-outline"
+             data-i18n="callNow">
+            Call Now
+          </a>
+        </div>
 
-              <img
-                src="assets/lic.png"
-                alt="Wealth With Sarode financial advisor"
-                class="advisor-photo"
-              />
+        <!-- TRUST METRICS -->
+        <div class="trust-row">
 
-              <div class="advisor-label">
-                <strong>Wealth With Sarode</strong>
-                <span>LIC Financial Advisor</span>
-              </div>
-            </div>
+          <div class="trust-item">
+            <strong>480+</strong>
+            <small>Families Guided</small>
           </div>
 
-    
+          <div class="divider"></div>
+
+          <div class="trust-item">
+            <strong>100%</strong>
+            <small>Claim Record</small>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="trust-item">
+            <strong>6 Years</strong>
+            <small>Experience</small>
+          </div>
+
+        </div>
 
       </div>
-    </section>
 
-    <!-- MOVING TEXT -->
-    <section class="ticker">
-      <div class="ticker-track">
-        <span>FAMILY PROTECTION</span><i>•</i>
-        <span>CHILDREN'S FUTURE</span><i>•</i>
-        <span>RETIREMENT PLANNING</span><i>•</i>
-        <span>WEALTH CREATION</span><i>•</i>
-        <span>SAVINGS</span><i>•</i>
+      <!-- RIGHT ADVISOR CARD -->
+      <div class="advisor-stage">
 
-        <span>FAMILY PROTECTION</span><i>•</i>
-        <span>CHILDREN'S FUTURE</span><i>•</i>
-        <span>RETIREMENT PLANNING</span><i>•</i>
-        <span>WEALTH CREATION</span><i>•</i>
+        <div class="stage-card">
+
+          <div class="stage-top">
+
+            <div class="lic-badge">
+              <div class="lic-mark">LIC</div>
+              <div class="lic-caption">
+                LIFE INSURANCE<br>
+                CORPORATION OF INDIA
+              </div>
+            </div>
+
+            <div class="verified">
+              ✓ Financial Guidance
+            </div>
+
+          </div>
+
+          <div class="advisor-photo-wrap">
+
+            <div class="gold-ring"></div>
+
+            <img
+              src="lic.png"
+              alt="Wealth With Sarode Financial Advisor"
+              class="advisor-photo"
+            >
+
+            <div class="advisor-label">
+              <strong>Wealth With Sarode</strong>
+              <span>LIC Plan Guidance</span>
+            </div>
+
+          </div>
+
+          <!-- ADVISOR EXPERIENCE -->
+          <div class="advisor-stats">
+
+            <div>
+              <strong>480+</strong>
+              <span>Families</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>Claim Record</span>
+            </div>
+
+            <div>
+              <strong>6 Years</strong>
+              <span>Experience</span>
+            </div>
+
+          </div>
+
+          <!-- CONTACT BUTTONS -->
+          <div class="advisor-contact">
+
+            <a
+              href="https://wa.me/918080185241?text=Namaste%2C%20mujhe%20LIC%20plans%20ki%20jankari%20chahiye."
+              target="_blank"
+              rel="noopener noreferrer">
+              WhatsApp Us
+            </a>
+
+            <a href="tel:+918080185241">
+              Direct Call
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
-    </section>
+
+    </div>
+  </section>
+
+  <!-- MOVING TICKER -->
+  <section class="ticker">
+    <div class="ticker-track">
+
+      <span>FAMILY PROTECTION</span><i>•</i>
+      <span>CHILDREN'S FUTURE</span><i>•</i>
+      <span>RETIREMENT PLANNING</span><i>•</i>
+      <span>WEALTH CREATION</span><i>•</i>
+      <span>SAVINGS</span><i>•</i>
+
+      <span>FAMILY PROTECTION</span><i>•</i>
+      <span>CHILDREN'S FUTURE</span><i>•</i>
+      <span>RETIREMENT PLANNING</span><i>•</i>
+      <span>WEALTH CREATION</span><i>•</i>
+      <span>SAVINGS</span><i>•</i>
+
+    </div>
+  </section>
+
+  <!-- YOUR EXISTING OUR FOCUS SECTION STARTS HERE -->
+
 
     <!-- PLANS SECTION -->
 
