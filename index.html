@@ -164,71 +164,102 @@
     </section>
 
     <!-- PLANS SECTION -->
-    <section id="plans" class="section plans-section">
-      <div class="container">
+<section id="plans" class="section plans-section">
+  <div class="container">
 
-        <div class="section-heading center">
-          <div class="eyebrow" data-i18n="ourFocus">OUR FOCUS</div>
+    <div class="section-heading center">
+      <div class="eyebrow" data-i18n="ourFocus">OUR FOCUS</div>
+      <h2 data-i18n="plansTitle">
+        आपके लक्ष्य के लिए <span>सही योजना</span>
+      </h2>
+      <p data-i18n="plansText">
+        अपने financial goals के अनुसार सही planning को समझें।
+      </p>
+    </div>
 
-          <h2 data-i18n="plansTitle">
-            आपके लक्ष्य के लिए <span>सही योजना</span>
-          </h2>
+    <div class="plan-slider" id="planSlider">
 
-          <p data-i18n="plansText">
-            अपने financial goal के बारे में बात कीजिए। हम available solutions को आपकी जरूरत के अनुसार समझने में मदद करेंगे.
-          </p>
-        </div>
+      <button class="slider-btn prev" type="button"
+        aria-label="Previous plan">‹</button>
 
-        <div class="plan-slider" id="planSlider">
+      <div class="plan-track">
 
-          <button class="slider-btn prev" type="button" aria-label="Previous plan">‹</button>
-
-          <div class="plan-track">
-
-            <article class="plan-card active">
-              <div class="plan-icon">⌂</div>
-              <h3>Family Protection</h3>
-              <p>परिवार की financial security और protection needs पर personalised guidance.</p>
-              <a href="#enquiry">Discuss this plan →</a>
-            </article>
-
-            <article class="plan-card">
-              <div class="plan-icon">◎</div>
-              <h3>Child Future</h3>
-              <p>बच्चों की education और future goals के लिए long-term planning options समझें.</p>
-              <a href="#enquiry">Discuss this plan →</a>
-            </article>
-
-            <article class="plan-card">
-              <div class="plan-icon">◴</div>
-              <h3>Retirement</h3>
-              <p>Retirement के बाद income और financial independence के लिए planning discussion.</p>
-              <a href="#enquiry">Discuss this plan →</a>
-            </article>
-
-            <article class="plan-card">
-              <div class="plan-icon">↗</div>
-              <h3>Wealth Creation</h3>
-              <p>आपके time horizon और objectives के अनुसार wealth-planning solutions पर बात करें.</p>
-              <a href="#enquiry">Discuss this plan →</a>
-            </article>
-
-            <article class="plan-card featured">
-              <div class="featured-tag">POPULAR</div>
-              <div class="plan-icon">₹</div>
-              <h3>Special Income Plan</h3>
-              <p>एक specific income-oriented opportunity के बारे में पूरी जानकारी और eligibility जानें.</p>
-              <a href="#enquiry">Get Details →</a>
-            </article>
-
+        <article class="plan-card active">
+          <img src="assets/family-protection.png"
+            alt="Family Protection Plan">
+          <div class="plan-card-content">
+            <div class="plan-icon">⌂</div>
+            <h3 data-i18n="familyPlan">Family Protection</h3>
+            <p data-i18n="familyPlanText">
+              परिवार की financial security और protection needs के लिए guidance.
+            </p>
+            <a href="#enquiry" data-i18n="discussPlan">Discuss this plan →</a>
           </div>
+        </article>
 
-          <button class="slider-btn next" type="button" aria-label="Next plan">›</button>
-        </div>
+        <article class="plan-card">
+          <img src="assets/child-future.png"
+            alt="Child Future Plan">
+          <div class="plan-card-content">
+            <div class="plan-icon">◎</div>
+            <h3 data-i18n="childPlan">Child Future</h3>
+            <p data-i18n="childPlanText">
+              बच्चों की education और future goals के लिए planning options.
+            </p>
+            <a href="#enquiry" data-i18n="discussPlan">Discuss this plan →</a>
+          </div>
+        </article>
 
-        <div class="slider-dots" id="sliderDots"></div>
+        <article class="plan-card">
+          <img src="assets/retirement.png"
+            alt="Retirement Planning">
+          <div class="plan-card-content">
+            <div class="plan-icon">◴</div>
+            <h3 data-i18n="retirementPlan">Retirement Planning</h3>
+            <p data-i18n="retirementPlanText">
+              Retirement के बाद financial independence के लिए planning.
+            </p>
+            <a href="#enquiry" data-i18n="discussPlan">Discuss this plan →</a>
+          </div>
+        </article>
+
+        <article class="plan-card">
+          <img src="assets/wealth-creation.png"
+            alt="Wealth Creation">
+          <div class="plan-card-content">
+            <div class="plan-icon">↗</div>
+            <h3 data-i18n="wealthPlan">Wealth Creation</h3>
+            <p data-i18n="wealthPlanText">
+              आपके financial objectives के अनुसार wealth planning guidance.
+            </p>
+            <a href="#enquiry" data-i18n="discussPlan">Discuss this plan →</a>
+          </div>
+        </article>
+
+        <article class="plan-card featured">
+          <img src="assets/special-income.png"
+            alt="Special Income Plan">
+          <div class="plan-card-content">
+            <div class="featured-tag">POPULAR</div>
+            <div class="plan-icon">₹</div>
+            <h3 data-i18n="incomePlan">Special Income Plan</h3>
+            <p data-i18n="incomePlanText">
+              Income-oriented options की जानकारी और eligibility समझें।
+            </p>
+            <a href="#enquiry" data-i18n="getDetails">Get Details →</a>
+          </div>
+        </article>
+
       </div>
-    </section>
+
+      <button class="slider-btn next" type="button"
+        aria-label="Next plan">›</button>
+    </div>
+
+    <div class="slider-dots" id="sliderDots"></div>
+
+  </div>
+</section>
 
     <!-- ABOUT SECTION -->
     <section id="about" class="section about-section">
